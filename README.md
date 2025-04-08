@@ -96,7 +96,7 @@
 
 
 <details>
-<summary>點我展開 Insertion Sort 流程圖</summary>
+<summary>📌 Insertion Sort 流程圖</summary>
 
 ```mermaid
 flowchart TD
@@ -109,3 +109,31 @@ flowchart TD
     G --> C
     F -->|否| G
     C -->|是| H[結束]
+<details> <summary>⚡ Quick Sort 流程圖</summary>
+flowchart TD
+    A[開始] --> B[選擇 pivot]
+    B --> C[分割陣列成左右兩邊]
+    C --> D[遞迴 Quick Sort 左半部]
+    D --> E[遞迴 Quick Sort 右半部]
+    E --> F[合併結果]
+    F --> G[結束]
+<details> <summary>🌀 Merge Sort 流程圖</summary>
+flowchart TD
+    A[開始] --> B[將陣列對半拆分]
+    B --> C{子陣列大小是否為 1?}
+    C -->|否| D[遞迴 Merge Sort 左半部]
+    D --> E[遞迴 Merge Sort 右半部]
+    E --> F[合併兩個已排序子陣列]
+    F --> C
+    C -->|是| G[返回結果]
+    G --> H[結束]
+<details> <summary>🏗️ Heap Sort 流程圖</summary>
+flowchart TD
+    A[開始] --> B[建立最大堆]
+    B --> C{堆大小 > 1?}
+    C -->|是| D[交換堆頂與最後一項]
+    D --> E[堆大小減 1]
+    E --> F[重新 heapify]
+    F --> C
+    C -->|否| G[結束]
+
