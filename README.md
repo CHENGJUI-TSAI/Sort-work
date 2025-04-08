@@ -3,3 +3,4 @@
 ## Quick Sort 
 ## MergeSort 
 ## Heap Sort
+:heavy_check_mark:
